@@ -6,13 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <io.armcha.elasticview.ElasticView
+        android:id="@+id/evCardFirst"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:flexibility="5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sky" />
+
+    </io.armcha.elasticview.ElasticView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
